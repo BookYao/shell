@@ -125,6 +125,7 @@ function calTotalNum()
             # caller Not NULL, callee is NULL
             totalNum=`cat /tmp/cdrFilePath.txt | cut -d ',' -f1 | grep $caller | wc -l`
         else
+            # caller not NULL, callee not null
             totalNum=`cat /tmp/cdrFilePath.txt | grep $caller\",\"$callee | wc -l` 
         fi
     fi
