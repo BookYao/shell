@@ -2,6 +2,7 @@
 <!DOCTYPE scenario SYSTEM "sipp.dtd">
 
 <scenario name="branch_client">
+  <!-- retrans: 表示 500ms 重传该消息, 测试注册时候，可以去掉该参数 -->
   <send retrans="500">
     <![CDATA[
  
@@ -23,6 +24,7 @@
   </recv>
 
   <label id="1"/>
+  <!-- retrans: 表示 500ms 重传该消息, 测试注册时候，可以去掉该参数 -->
   <send retrans="500">
     <![CDATA[
  
