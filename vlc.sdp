@@ -1,0 +1,3 @@
+m=video 16000 RTP/AVP 126
+a=rtpmap:126 H264/90000
+a=framerate:15
